@@ -19,7 +19,7 @@ public class Aviation extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         mediaController.setMediaPlayer(videoView);
         videoView.setMediaController(mediaController);
-        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName()+"/" + R.raw.zenith));
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName()+"/" + R.raw.air));
         videoView.start();
         videoView.setMediaController(null);
 

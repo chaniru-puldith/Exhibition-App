@@ -19,7 +19,7 @@ public class Mar4 extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         mediaController.setMediaPlayer(videoView);
         videoView.setMediaController(mediaController);
-        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName()+"/" + R.raw.ship));
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName()+"/" + R.raw.pool));
         videoView.start();
         videoView.setMediaController(null);
 
