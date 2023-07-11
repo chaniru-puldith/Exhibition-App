@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EduExpo"
         tools:targetApi="31">
         <activity
+            android:name=".team"
+            android:exported="false" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false" />
+        <activity
             android:name=".Management"
             android:exported="false" />
         <activity
