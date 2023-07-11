@@ -46,7 +46,6 @@
                     android:layout_marginTop="10dp"
                     android:justificationMode="inter_word"
                     android:text="CINEC Campus established in 1990 and located in the picturesque suburbs of Colombo, Malabe is one of the largest, most diversified and fastest growing non state higher education institutes in Sri, Lanka.\n\nIt caters to over 21,000 registered students annually in approximately 210 different Certificate, Diploma, Higher Diploma, Graduate, Postgraduate and Doctoral programs approved by the Government of Sri Lanka and Universities in Australia, China, Germany, UK, USA and TAFE College in Australia. CINEC has branches in the Northern and Eastern capitals of Sri Lanka and also in a Colombo suburb. CINEC has the rare honor of managing State Maritime Institutes in Seychelles and Fiji with a mandate to upgrade them to international standards and recognition."
-                    android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
                 <ImageView
@@ -57,7 +56,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="431dp"
-                    android:background="?attr/contactcard_color"
+                    android:background="@color/purple_200"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -179,7 +178,6 @@
                         android:layout_gravity="center"
                         android:text="All Copyrights Reserved By CINEC Campus - @2023"
                         android:textAlignment="center"
-                        android:textColor="?text_color"
                         android:textSize="13dp" />
 
                     <TextView

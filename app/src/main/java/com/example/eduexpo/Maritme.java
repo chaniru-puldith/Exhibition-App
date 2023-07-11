@@ -39,10 +39,10 @@ public class Maritme extends AppCompatActivity implements View.OnClickListener {
             i = new Intent(this, Mar2.class);
             startActivity(i);
         } else if (v.getId() == R.id.button4) {
-            i = new Intent(this, Mar3.class);
+            i = new Intent(this, Mar4.class);
             startActivity(i);
         }else if (v.getId() == R.id.button5) {
-            i = new Intent(this, Mar4.class);
+            i = new Intent(this, Mar3.class);
             startActivity(i);
         }
     }
