@@ -3,7 +3,23 @@
     <style name="Base.Theme.EduExpo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF8939F1</item>
+        <item name="colorPrimaryVariant">#FF8939F1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="background_color">#FFFFFFFF</item>
+        <item name="text_color">#FF000000</item>
+        <item name="card_color">#FFFFFFFF</item>
+        <item name="contactcard_color">#2596be</item>
     </style>
+
 
     <style name="Theme.EduExpo" parent="Base.Theme.EduExpo" />
 </resources>

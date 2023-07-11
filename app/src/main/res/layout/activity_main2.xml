@@ -21,7 +21,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="261dp"
@@ -31,27 +32,6 @@
                 android:src="@drawable/open">
 
             </ImageView>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginRight="10dp">
-
-                <ImageButton
-                    android:id="@+id/logout_btn"
-                    android:layout_width="50dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:background="@color/white"
-                    android:clickable="true"
-                    app:srcCompat="@drawable/baseline_logout_24" />
-            </FrameLayout>
 
         </LinearLayout>
 
@@ -93,7 +73,7 @@
             android:orientation="horizontal">
             <!--adding card view with in vector icons-->
             <androidx.cardview.widget.CardView
-                android:id="@+id/agenda"
+                android:id="@+id/Map"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -119,7 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="CAMPUS NAVIGATION"
+                        android:text="LOCATE CAMPUS"
                         android:textColor="@android:color/darker_gray"
                         android:textStyle="bold" />
 
@@ -134,13 +114,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Check Agenda"
+                        android:text="Navigation to Campus"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/courses"
+                android:id="@+id/stalls"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -180,7 +160,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Check Courses"
+                        android:text="Locate Stalls"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -194,7 +174,7 @@
             android:orientation="horizontal">
             <!--adding card view with in vector icons-->
             <androidx.cardview.widget.CardView
-                android:id="@+id/agenda"
+                android:id="@+id/qrscaner"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -234,13 +214,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Check Agenda"
+                        android:text="Scan QR Codes"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/courses"
+                android:id="@+id/about"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -280,7 +260,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Check Courses"
+                        android:text="About CINEC"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
