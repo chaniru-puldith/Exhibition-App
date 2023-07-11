@@ -55,9 +55,9 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         } else if (v.getId() == R.id.qrscaner) {
             i = new Intent(this, QRScannerActivity.class);
             startActivity(i);
-        } else if (v.getId() == R.id.about) {
-            i = new Intent(this, AboutUsActivity.class);
-            startActivity(i);
+//        } else if (v.getId() == R.id.about) {
+//            i = new Intent(this, AboutUsActivity.class);
+//            startActivity(i);
         } else if (v.getId() == R.id.stalls) {
             i = new Intent(this, StallsActivity.class);
             startActivity(i);
