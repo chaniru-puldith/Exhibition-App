@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".Management">
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -53,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tTourism and Hospital;ity Management"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -63,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tLogistics and Supply Chain Management"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -72,6 +75,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="\t\t\The Building Beyond Boundaries stall"
             android:textSize="18sp">
         </TextView>
@@ -83,6 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tBanking and finance"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -93,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tBuisness and Industrial Mathematics"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -101,6 +107,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="\t\tRetail Marketing, Human Resource and\n\t\tBuisness Administration"
             android:textSize="18sp">
         </TextView>
@@ -112,6 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
+            android:textColor="@color/white"
             android:text="~All locacted in Spencer Building"
             android:textSize="15sp">
         </TextView>

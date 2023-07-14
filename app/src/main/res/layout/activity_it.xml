@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".IT">
 
     <RelativeLayout
@@ -54,7 +55,8 @@
             android:layout_below="@id/video"
             android:layout_marginTop="10dp"
             android:text="\t\tVR/AR Stall"
-            android:textSize="18sp"></TextView>
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txt2"
@@ -63,8 +65,8 @@
             android:layout_below="@id/txt1"
             android:layout_marginTop="10dp"
             android:text="\t\tHuman Computer Interaction and\n\t\tComputer Vision Stall"
-            android:textSize="18sp"></TextView>
-
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
         <TextView
             android:id="@+id/txt3"
             android:layout_width="match_parent"
@@ -72,7 +74,8 @@
             android:layout_below="@id/txt2"
             android:layout_marginTop="10dp"
             android:text="\t\tIOT &amp; AI Stall"
-            android:textSize="18sp"></TextView>
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txt4"
@@ -81,7 +84,8 @@
             android:layout_below="@id/txt3"
             android:layout_marginTop="10dp"
             android:text="\t\tHologram Science Project Stall"
-            android:textSize="18sp"></TextView>
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
 
 
         <TextView
@@ -92,7 +96,8 @@
             android:layout_marginTop="10dp"
             android:gravity="end"
             android:text="~All locacted in Zenith Building"
-            android:textSize="15sp"></TextView>
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/gaming"
@@ -104,6 +109,7 @@
             android:layout_marginVertical="30dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="7dp"
             app:cardBackgroundColor="@color/white">
 
             <LinearLayout
@@ -125,7 +131,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="GAMING STALL"
-                    android:textColor="@android:color/darker_gray"
                     android:textStyle="bold" />
 
                 <View

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".HealthScience">
 
     <LinearLayout
@@ -51,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tMental Health stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -59,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tMicrobiology stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -67,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\t\Anatomy stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -75,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tHealthy Food stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -82,6 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tChemistry stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -89,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tHematology stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -96,6 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tDisease stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -103,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tHerbal Drug Manufacture stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -110,6 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tCosmetic stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -117,12 +127,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tMolecular Genetics stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="\t\tENT stall"
             android:textSize="18sp">
         </TextView>
@@ -130,6 +142,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="\t\tNursing stall"
             android:textSize="18sp">
         </TextView>
@@ -138,6 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tParasitology stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
         <TextView
@@ -146,6 +160,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="~All locacted in Zenith Building"
+            android:textColor="@color/white"
             android:textSize="15sp">
         </TextView>
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#033970"
     tools:context=".team">
 
     <LinearLayout
@@ -20,8 +21,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Our Team"
+            android:text="OUR TEAM"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="25dp" />
 
     </LinearLayout>
@@ -40,11 +42,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp">
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:layout_marginLeft="15dp"
                     android:src="@drawable/chaniru" />
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -55,10 +64,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_marginTop="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Chaniru\nPulith"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
@@ -67,14 +77,14 @@
                         android:layout_height="1dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black" />
+                        android:background="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Project Manager\nBackEnd Developer"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -84,12 +94,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/andrea" />
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/andrea" />
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -100,27 +116,28 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_marginTop="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Andrea\nOkeena"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20dp"
                         android:textStyle="bold" />
+
 
                     <View
                         android:layout_width="90dp"
                         android:layout_height="1dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black" />
-
+                        android:background="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Business Analyst\nBackEnd Developer"
-                        android:textColor="@color/black" />
+                        android:text="Project Owner\nBackEnd Developer"
+                        android:textColor="@color/white" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -130,12 +147,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="8dp">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/sandika" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/sandika" />
+                </androidx.cardview.widget.CardView>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -145,10 +169,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_marginTop="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sandika\nSathsara"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
@@ -157,7 +182,7 @@
                         android:layout_height="1dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:background="@color/black" />
+                        android:background="@color/white" />
 
 
                     <TextView
@@ -165,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="FrontEnd Developer\nSecurity Consultant"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".Gaming">
 
     <RelativeLayout
@@ -53,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tGaming stalls"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -64,6 +66,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="~All locacted in Dalian Building"
+            android:textColor="@color/white"
             android:textSize="15sp">
         </TextView>
 

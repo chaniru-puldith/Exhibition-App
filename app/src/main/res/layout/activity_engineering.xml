@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".Engineering">
 
 
@@ -51,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tThe Circuit City stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -59,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tThe Grease Lab stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -67,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\t\The Building Beyond Boundaries stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -75,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tThe Mathematriks stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -92,6 +97,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="~All locacted in Zenith  Building"
+            android:textColor="@color/white"
             android:textSize="15sp">
         </TextView>
 

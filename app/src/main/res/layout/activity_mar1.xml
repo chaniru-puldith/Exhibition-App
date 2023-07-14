@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".Mar1">
 
     <LinearLayout
@@ -51,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tPanama Canal stall"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -59,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\t\tFalkrik Wheel stalll"
+            android:textColor="@color/white"
             android:textSize="18sp">
         </TextView>
 
@@ -68,6 +71,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="~All locacted in Moonraker (Open Cafeteria) Building"
+            android:textColor="@color/white"
             android:textSize="15sp">
         </TextView>
 
