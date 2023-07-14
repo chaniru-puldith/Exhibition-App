@@ -9,30 +9,32 @@ import android.view.View;
 import android.widget.Button;
 
 public class StallsActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button aviation, health, engineering, management, maritime;
+    private CardView aviation, health, engineering, management, maritime, it;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stalls);
 
-        aviation = (Button) findViewById(R.id.button1);
-        health =  (Button) findViewById(R.id.button2);
-        engineering = (Button) findViewById(R.id.button3);
-        management = (Button) findViewById(R.id.button4);
-        maritime = (Button) findViewById(R.id.button5);
+        aviation = (CardView) findViewById(R.id.button1);
+        health =  (CardView) findViewById(R.id.button2);
+        engineering = (CardView) findViewById(R.id.button3);
+        management = (CardView) findViewById(R.id.button4);
+        maritime = (CardView) findViewById(R.id.button5);
+        it = (CardView) findViewById(R.id.button6);
 
         aviation.setOnClickListener((View.OnClickListener) this);
         health.setOnClickListener((View.OnClickListener) this);
         engineering.setOnClickListener((View.OnClickListener) this);
         management.setOnClickListener((View.OnClickListener) this);
         maritime.setOnClickListener((View.OnClickListener) this);
+        it.setOnClickListener((View.OnClickListener) this);
     }
 
     @Override
     public void onClick(View v) {
         Intent i;
         if (v.getId() == R.id.button1) {
-            i = new Intent(this, Aviation.class);
+            i = new Intent(this, IT.class);
             startActivity(i);
         } else if (v.getId() == R.id.button2) {
             i = new Intent(this, HealthScience.class);
@@ -41,10 +43,13 @@ public class StallsActivity extends AppCompatActivity implements View.OnClickLis
             i = new Intent(this, Maritme.class);
             startActivity(i);
         } else if (v.getId() == R.id.button4) {
+            i = new Intent(this, Management.class);
+            startActivity(i);
+        } else if (v.getId() == R.id.button5) {
             i = new Intent(this, Engineering.class);
             startActivity(i);
-        }else if (v.getId() == R.id.button5) {
-            i = new Intent(this, Management.class);
+        } else if (v.getId() == R.id.button6) {
+            i = new Intent(this, Aviation.class);
             startActivity(i);
         }
     }

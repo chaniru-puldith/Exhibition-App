@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mar4">
+    tools:context=".Gaming">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:orientation="vertical">
-
         <LinearLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
@@ -41,31 +40,34 @@
         </LinearLayout>
 
         <VideoView
+            android:layout_below="@id/banner"
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_gravity="center"/>
 
         <TextView
+            android:layout_below="@id/video"
+            android:id="@+id/txt"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="\t\tSurvival Techniques Traning"
+            android:text="\t\tGaming stalls"
             android:textSize="18sp">
         </TextView>
 
 
         <TextView
+            android:layout_below="@id/txt"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="~All locacted in Swimming Pool"
+            android:text="~All locacted in Dalian Building"
             android:textSize="15sp">
         </TextView>
 
 
+    </RelativeLayout>
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

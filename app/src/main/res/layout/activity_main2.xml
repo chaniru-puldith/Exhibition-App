@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#033970"
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
     <LinearLayout
+        android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -37,13 +39,9 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/slider1"
+            android:layout_below="@id/banner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -51,8 +49,9 @@
             android:layout_marginBottom="10dp"
             android:layout_marginRight="23dp"
             app:cardBackgroundColor="@color/blue"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp">
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="20dp">
 
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/slider"
@@ -64,19 +63,23 @@
                 app:iss_period="1000"
                 app:iss_title_background="@drawable/first" />
         </androidx.cardview.widget.CardView>
+        <!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
-        <LinearLayout
+        <RelativeLayout
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
+            android:id="@+id/buttonsetContainer1"
+            android:layout_below="@id/slider1"
             android:gravity="center"
-            android:orientation="horizontal">
-            <!--adding card view with in vector icons-->
+            android:layout_centerHorizontal="true">
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/Map"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
                 android:clickable="true"
                 app:cardBackgroundColor="@color/white"
                 android:foreground="?android:attr/selectableItemBackground">
@@ -89,6 +92,7 @@
 
 
                     <ImageView
+                        android:layout_marginTop="10dp"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundpink"
@@ -99,14 +103,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="LOCATE CAMPUS"
+                        android:text="GOOGLE MAP"
                         android:textColor="@android:color/darker_gray"
                         android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:background="@color/lightgray" />
 
                     <TextView
@@ -114,17 +118,19 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Navigation to Campus"
+                        android:text="Google Map Navigation to Campus"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/stalls"
+                android:layout_toRightOf="@id/Map"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
                 android:clickable="true"
+                app:cardCornerRadius="7dp"
                 app:cardBackgroundColor="@color/white"
                 android:foreground="?android:attr/selectableItemBackground">
 
@@ -135,24 +141,25 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:layout_marginTop="10dp"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundpurple"
                         android:padding="10dp"
-                        android:src="@drawable/baseline_store_mall_directory_24" />
+                        android:src="@drawable/baseline_store_mall_directory_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="STALLS"
+                        android:text="NAVIGATE STALLS"
                         android:textColor="@android:color/darker_gray"
                         android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:background="@color/lightgray" />
 
                     <TextView
@@ -160,22 +167,21 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Locate Stalls"
+                        android:text="Navigate Locations of Stalls"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <!--adding card view with in vector icons-->
+
+
+<!--            -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
             <androidx.cardview.widget.CardView
+                app:cardCornerRadius="7dp"
+                android:layout_below="@id/Map"
                 android:id="@+id/qrscaner"
                 android:layout_width="160dp"
+                android:layout_marginTop="30dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
                 android:clickable="true"
@@ -188,7 +194,9 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+
                     <ImageView
+                        android:layout_marginTop="10dp"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundyello"
@@ -199,14 +207,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="QR SCANNER"
+                        android:text="GET STALL DETAILS"
                         android:textColor="@android:color/darker_gray"
                         android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:background="@color/lightgray" />
 
                     <TextView
@@ -214,13 +222,19 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Scan QR Codes"
+                        android:text="Scan QR &amp; GET STALL DETAILS"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
+
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/about"
+                android:layout_below="@id/Map"
+                app:cardCornerRadius="7dp"
+                android:layout_toRightOf="@id/qrscaner"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -235,6 +249,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:layout_marginTop="10dp"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundgreen"
@@ -245,14 +260,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="About"
+                        android:text="ABOUT US"
                         android:textColor="@android:color/darker_gray"
                         android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="5dp"
                         android:background="@color/lightgray" />
 
                     <TextView
@@ -260,12 +275,24 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="About CINEC"
+                        android:text="DESCRIPTION &amp; DETAILS ABOUT CINEC"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+        </RelativeLayout>
 
-        </LinearLayout>
-    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Copyrights Reserved By CINEC Campus - @2023"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:textColor="@color/grey_font"/>
+        <!--adding card view with in vector icons-->
 
-</LinearLayout>
+</RelativeLayout>

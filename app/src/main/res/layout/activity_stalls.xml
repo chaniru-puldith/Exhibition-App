@@ -1,96 +1,467 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#033970"
     tools:context=".StallsActivity">
-
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/blue_border"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="40dp"
-            android:text="Edu Expo" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:text="STALLS" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:srcCompat="@drawable/fourth"
-            android:gravity="center"/>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center">
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_margin="5dp"
-                android:text="@string/aviation" />
+            <ImageView
+                android:layout_width="261dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:src="@drawable/open">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="175dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="@string/health_nsciences" />
+            </ImageView>
+
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_margin="5dp"
-                android:text="@string/maritime_nsciences" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="175dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="@string/engineering_ntechnology" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_margin="5dp"
-                android:text="@string/management_nsocial_sciences" />
-        </LinearLayout>
-
-
 
     </LinearLayout>
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="1dp">
+
+        <RelativeLayout
+            android:id="@+id/deptmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/dtmap" />
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button1"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundyello"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="DEPARTMENT OF\nIT"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button1"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_marginStart="5dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:layout_marginBottom="5dp"-->
+                <!--                        android:text="@string/aviation" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button2"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/button1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundpurple"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="FACULTY OF HEALTH SCIENCES"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button2"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_marginStart="5dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:layout_marginBottom="5dp"-->
+                <!--                        android:layout_toRightOf="@id/button1"-->
+                <!--                        android:text="@string/health_nsciences" />-->
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button3"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_below="@id/button1"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundgreen"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="FACULTY OF MARITIME SCIENCES"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button3"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_below="@id/button1"-->
+                <!--                        android:layout_marginStart="5dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:layout_marginBottom="5dp"-->
+                <!--                        android:text="@string/maritime_nsciences" />-->
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button5"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_below="@id/button3"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundorange"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="DEPARTMENT OF ENGINEERING"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button4"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_below="@id/button1"-->
+                <!--                        android:layout_marginStart="5dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:layout_marginBottom="5dp"-->
+                <!--                        android:layout_toRightOf="@id/button3"-->
+                <!--                        android:text="Engineering" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button4"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_below="@id/button1"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/button3"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundpink"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="FACULTY OF MANAGEMENT &amp; SOCIAL SCIENCES"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button5"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_below="@id/button3"-->
+                <!--                        android:layout_margin="5dp"-->
+                <!--                        android:text="@string/management_nsocial_sciences" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/button6"
+                    android:layout_width="160dp"
+                    android:layout_height="175dp"
+                    android:layout_below="@id/button3"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/button5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cerclebackgroundblue"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_store_mall_directory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="DEPARTMENT OF AVIATION"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Navigate Stalls"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!--                    <Button-->
+                <!--                        android:id="@+id/button6"-->
+                <!--                        android:layout_width="160dp"-->
+                <!--                        android:layout_height="160dp"-->
+                <!--                        android:layout_below="@id/button3"-->
+                <!--                        android:layout_marginStart="5dp"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                        android:layout_marginEnd="5dp"-->
+                <!--                        android:layout_marginBottom="5dp"-->
+                <!--                        android:layout_toRightOf="@id/button5"-->
+                <!--                        android:text="IT Faculty" />-->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="All Copyrights Reserved By CINEC Campus - @2023"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_font"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
