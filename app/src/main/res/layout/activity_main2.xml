@@ -38,10 +38,13 @@
         </LinearLayout>
 
     </LinearLayout>
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/banner">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <RelativeLayout
             android:id="@+id/body"
             android:layout_width="match_parent"
@@ -284,22 +287,18 @@
 
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/buttonsetContainer1">
-                <TextView
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="All Copyrights Reserved By CINEC Campus - @2023"
-                    android:textAlignment="center"
-                    android:textSize="10dp"
-                    android:textColor="@color/grey_font"/>
-            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Copyrights Reserved By CINEC Campus - @2023"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:textColor="@color/grey_font"/>
+</RelativeLayout>
 </RelativeLayout>
