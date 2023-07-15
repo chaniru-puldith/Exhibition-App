@@ -10,18 +10,27 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 public class aboutus extends AppCompatActivity {
-    TextView about;
+    TextView team;
     FrameLayout fb, insta, youtube;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutus);
 
-        about = (TextView) findViewById(R.id.textView6);
+        team = (TextView) findViewById(R.id.aboutteam);
 
         fb = (FrameLayout) findViewById(R.id.fb);
         insta = (FrameLayout) findViewById(R.id.insta);
         youtube = (FrameLayout) findViewById(R.id.youtube);
+
+        team.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i  =  new Intent(aboutus.this, team.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         insta.setOnClickListener(new View.OnClickListener() {
             @Override

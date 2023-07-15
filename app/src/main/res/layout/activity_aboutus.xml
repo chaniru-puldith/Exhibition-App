@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -39,10 +39,11 @@
     </LinearLayout>
 
     <ScrollView
+        android:layout_below="@id/banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -51,11 +52,12 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
                 android:gravity="center"
-                android:layout_margin="15dp"
                 android:orientation="vertical">
-
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,17 +66,18 @@
                     android:justificationMode="inter_word"
                     android:text="CINEC Campus established in 1990 and located in the picturesque suburbs of Colombo, Malabe is one of the largest, most diversified and fastest growing non state higher education institutes in Sri, Lanka.\n\nIt caters to over 21,000 registered students annually in approximately 210 different Certificate, Diploma, Higher Diploma, Graduate, Postgraduate and Doctoral programs approved by the Government of Sri Lanka and Universities in Australia, China, Germany, UK, USA and TAFE College in Australia. CINEC has branches in the Northern and Eastern capitals of Sri Lanka and also in a Colombo suburb. CINEC has the rare honor of managing State Maritime Institutes in Seychelles and Fiji with a mandate to upgrade them to international standards and recognition."
                     android:textColor="@color/white"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
                     android:src="@drawable/about" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="431dp"
-                    android:background="@color/purple_200"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -87,7 +90,7 @@
                         android:textSize="20dp" />
 
                     <View
-                        android:layout_width="90dp"
+                        android:layout_width="300dp"
                         android:layout_height="1dp"
                         android:layout_margin="20dp"
                         android:background="@color/white" />
@@ -132,10 +135,10 @@
 
 
                     <FrameLayout
+                        android:id="@+id/insta"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_margin="10dp"
-                        android:id="@+id/insta">
+                        android:layout_margin="10dp">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
@@ -151,10 +154,10 @@
                     </FrameLayout>
 
                     <FrameLayout
+                        android:id="@+id/youtube"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_margin="10dp"
-                        android:id="@+id/youtube">
+                        android:layout_margin="10dp">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
@@ -182,10 +185,11 @@
                         android:layout_gravity="center"
                         android:text="All Copyrights Reserved By CINEC Campus - @2023"
                         android:textAlignment="center"
+                        android:textColor="@color/grey_font"
                         android:textSize="13dp" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/aboutteam"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -194,16 +198,16 @@
                         android:background="@color/yello"
                         android:text="App Designed &amp; Developed by Group2-UOW_BT06"
                         android:textAlignment="center"
-                        android:textColor="@color/grey_font"
+                        android:textColor="@color/black"
                         android:textSize="10dp" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
 
-</LinearLayout>
+</RelativeLayout>
 

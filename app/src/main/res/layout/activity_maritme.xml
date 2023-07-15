@@ -55,57 +55,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center_horizontal">
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_margin="5dp"
-                android:text="Panama Canal" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_toRightOf="@id/button1"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="Falkrik Wheel" />
+                android:text="Panama Canal &amp;\nFalkrirk Wheel" />
 
             <Button
-                android:layout_below="@id/button1"
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/button1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Fire prevention &amp;\nFire Fighting" />
+
+            <Button
                 android:id="@+id/button3"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_margin="5dp"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/button1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:text="First Aid Trainning" />
 
             <Button
                 android:layout_below="@id/button1"
                 android:layout_toRightOf="@id/button3"
                 android:id="@+id/button4"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Survival Training" />
-
-            <Button
-                android:layout_below="@id/button3"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/button5"
-                android:layout_width="175dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:text="Fire prevention &amp;\nFire Fighting" />
         </RelativeLayout>
         <TextView
             android:layout_alignParentBottom="true"

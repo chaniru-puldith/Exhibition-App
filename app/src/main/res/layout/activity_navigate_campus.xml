@@ -55,7 +55,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/blue"
-            android:text="Map" />
+            android:text="Navigate Campus" />
     </LinearLayout>
 
 </LinearLayout>
