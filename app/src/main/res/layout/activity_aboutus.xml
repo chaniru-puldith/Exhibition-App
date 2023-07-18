@@ -49,7 +49,7 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
@@ -60,28 +60,35 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/para1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:justificationMode="inter_word"
-                    android:text="CINEC Campus established in 1990 and located in the picturesque suburbs of Colombo, Malabe is one of the largest, most diversified and fastest growing non state higher education institutes in Sri, Lanka.\n\nIt caters to over 21,000 registered students annually in approximately 210 different Certificate, Diploma, Higher Diploma, Graduate, Postgraduate and Doctoral programs approved by the Government of Sri Lanka and Universities in Australia, China, Germany, UK, USA and TAFE College in Australia. CINEC has branches in the Northern and Eastern capitals of Sri Lanka and also in a Colombo suburb. CINEC has the rare honor of managing State Maritime Institutes in Seychelles and Fiji with a mandate to upgrade them to international standards and recognition."
+                    android:text="@string/the_cinec_innovation_and_invention_edu_exhibition_is_a_platform_that_celebrates_and_promotes_creativity_innovation_and_scientific_discovery_it_aims_to_inspire_young_minds_foster_invention_and_encourage_critical_thinking_held_on_july_27th_29th_2023_at_cinec_campus_malabe_the_exhibition_will_showcase_groundbreaking_projects_and_ideas_from_various_fields_providing_an_immersive_learning_experience_attendees_can_explore_cutting_edge_prototypes_witness_demonstrations_and_interact_with_inventors_and_innovators_with_exhibits_workshops_and_presentations_the_event_creates_an_engaging_and_inclusive_environment_for_participants_of_all_ages_it_highlights_advancements_in_technology_science_engineering_and_more_sparking_curiosity_and_inspiration"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
                 <ImageView
+                    android:layout_below="@id/para1"
+                    android:id="@+id/img"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/about" />
 
 
-                <LinearLayout
+                <RelativeLayout
+                    android:layout_below="@id/img"
+                    android:id="@+id/content"
                     android:layout_width="match_parent"
-                    android:layout_height="431dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
+                        android:layout_centerHorizontal="true"
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -90,12 +97,15 @@
                         android:textSize="20dp" />
 
                     <View
+                        android:layout_below="@id/textView3"
+                        android:id="@+id/view1"
                         android:layout_width="300dp"
                         android:layout_height="1dp"
                         android:layout_margin="20dp"
                         android:background="@color/white" />
 
                     <TextView
+                        android:layout_below="@id/view1"
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -104,14 +114,17 @@
                         android:textColor="@color/white"
                         android:textSize="17dp" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
+                    android:layout_below="@id/content"
+                    android:id="@+id/social"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/blue_border">
+                    android:background="@drawable/blue_border"
+                    android:layout_centerHorizontal="true">
 
 
                     <FrameLayout
@@ -176,7 +189,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_below="@id/social">
 
                     <TextView
                         android:id="@+id/textView5"
@@ -204,7 +218,7 @@
                 </LinearLayout>
 
 
-            </LinearLayout>
+            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
 
