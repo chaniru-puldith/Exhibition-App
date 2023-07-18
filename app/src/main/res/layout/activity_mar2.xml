@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#033970"
+    android:padding="15dp"
     tools:context=".Mar2">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/banner"
@@ -40,6 +35,14 @@
             </LinearLayout>
 
         </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <VideoView
             android:id="@+id/video"
@@ -48,6 +51,8 @@
             android:layout_gravity="center"/>
 
         <TextView
+            android:layout_below="@id/video"
+            android:id="@+id/txt1"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,6 +63,7 @@
 
 
         <TextView
+            android:layout_below="@id/txt1"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,9 +72,17 @@
             android:textColor="@color/white"
             android:textSize="15sp">
         </TextView>
-
-
-
-    </LinearLayout>
-
-</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Copyrights Reserved By CINEC Campus - @2023"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:textColor="@color/grey_font"/>
+</RelativeLayout>

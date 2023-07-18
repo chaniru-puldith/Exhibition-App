@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#033970"
-    tools:context=".HealthScience">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
+    tools:context=".HealthScience"
+    android:paddingHorizontal="15dp">
 
         <LinearLayout
             android:id="@+id/banner"
@@ -41,22 +36,20 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </LinearLayout>
-
         <ScrollView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@id/banner">
+            android:layout_below="@id/banner"
+            android:layout_marginTop="1dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="15dp"
-                android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
 
                 <VideoView
                     android:id="@+id/video"
@@ -65,6 +58,8 @@
                     android:layout_gravity="center"/>
 
                 <TextView
+                    android:layout_below="@id/video"
+                    android:id="@+id/txt1"
                     android:layout_marginTop="30dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,6 +69,8 @@
                 </TextView>
 
                 <TextView
+                    android:layout_below="@id/txt1"
+                    android:id="@+id/txt2"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,6 +80,8 @@
                 </TextView>
 
                 <TextView
+                    android:layout_below="@id/txt2"
+                    android:id="@+id/txt3"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,6 +91,8 @@
                 </TextView>
 
                 <TextView
+                    android:layout_below="@id/txt3"
+                    android:id="@+id/txt4"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -100,6 +101,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt4"
+                    android:id="@+id/txt5"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -108,6 +111,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt5"
+                    android:id="@+id/txt6"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -116,6 +121,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt6"
+                    android:id="@+id/txt7"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -124,6 +131,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt7"
+                    android:id="@+id/txt8"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -132,6 +141,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt8"
+                    android:id="@+id/txt9"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -140,6 +151,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt9"
+                    android:id="@+id/txt10"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -148,6 +161,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt10"
+                    android:id="@+id/txt11"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -156,6 +171,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt11"
+                    android:id="@+id/txt12"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -164,6 +181,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt12"
+                    android:id="@+id/txt13"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -172,6 +191,8 @@
                     android:textSize="18sp">
                 </TextView>
                 <TextView
+                    android:layout_below="@id/txt13"
+                    android:id="@+id/txt14"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -179,10 +200,23 @@
                     android:text="~All locacted in Zenith Building"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:layout_marginBottom="15dp">
+                    android:layout_marginBottom="30dp">
                 </TextView>
 
-            </LinearLayout>
+
+                <TextView
+                    android:layout_below="@id/txt13"
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="6dp"
+                    android:text="All Copyrights Reserved By CINEC Campus - @2023"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/grey_font"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
         </ScrollView>
-    </LinearLayout>
 </RelativeLayout>
