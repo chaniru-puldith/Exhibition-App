@@ -5,13 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#033970"
-    tools:context=".Aviation">
+    tools:context=".Aviation"
+    android:padding="15dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
         <LinearLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
@@ -39,72 +35,100 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <VideoView
-            android:id="@+id/video"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:layout_marginTop="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="\t\tWind Tunnel stall"
-            android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="\t\tHandcrafted Aircraft stall"
-            android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="\t\t\RC plates model stall"
-            android:textSize="18sp">
-        </TextView>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="\t\tA scale model of trister stall"
-            android:textSize="18sp">
-        </TextView>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:text="~All locacted in Aircraft Hanger Area"
-            android:textColor="@color/white"
-            android:textSize="15sp">
-        </TextView>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/banner"
+            android:layout_marginTop="1dp">
 
 
-    </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All Copyrights Reserved By CINEC Campus - @2023"
-        android:textAlignment="center"
-        android:textSize="10sp"
-        android:textColor="@color/grey_font"/>
 
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_below="@id/video"
+                android:id="@+id/hanger"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/hangerbuil"/>
+
+            <TextView
+                android:layout_below="@id/hanger"
+                android:id="@+id/txt1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\tWind Tunnel stall"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/txt1"
+                android:id="@+id/txt2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\t\tHandcrafted Aircraft stall"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/txt2"
+                android:id="@+id/txt3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="\t\t\RC plates model stall"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/txt3"
+                android:id="@+id/txt4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="\t\tA scale model of trister stall"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/txt4"
+                android:id="@+id/txt5"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="~All locacted in Aircraft Hanger Area"
+                android:textColor="@color/white"
+                android:textSize="15sp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/txt5"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Copyrights Reserved By CINEC Campus - @2023"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textColor="@color/grey_font"/>
+
+            </RelativeLayout>
+        </ScrollView>
 </RelativeLayout>

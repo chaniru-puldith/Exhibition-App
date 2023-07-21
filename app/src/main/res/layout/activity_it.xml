@@ -49,11 +49,18 @@
                     android:layout_height="300dp"
                     android:layout_gravity="center" />
 
+                <ImageView
+                    android:layout_below="@id/video"
+                    android:id="@+id/zenith"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:src="@drawable/zenithbuil"/>
+
                 <TextView
                     android:id="@+id/txt1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/video"
+                    android:layout_below="@id/zenith"
                     android:layout_marginTop="10dp"
                     android:text="\t\tVR/AR Stall"
                     android:textColor="@color/white"

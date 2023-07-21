@@ -5,13 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#033970"
-    tools:context=".Gaming">
+    tools:context=".Gaming"
+    android:padding="15dp">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
         <LinearLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
@@ -39,17 +35,32 @@
             </LinearLayout>
 
         </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="1dp">
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <VideoView
-            android:layout_below="@id/banner"
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_gravity="center"/>
 
-        <TextView
+        <ImageView
             android:layout_below="@id/video"
-            android:id="@+id/txt"
+            android:id="@+id/dalian"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:src="@drawable/daliainbuil"/>
+
+        <TextView
+            android:layout_below="@id/dalian"
+            android:id="@+id/txt1"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +71,8 @@
 
 
         <TextView
-            android:layout_below="@id/txt"
+            android:layout_below="@id/txt1"
+            android:id="@id/txt2"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,10 +83,11 @@
         </TextView>
 
 
-    </RelativeLayout>
     <TextView
+        android:layout_below="@id/txt2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -83,5 +96,7 @@
         android:textAlignment="center"
         android:textSize="10sp"
         android:textColor="@color/grey_font"/>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -5,14 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#033970"
-    tools:context=".Engineering">
+    tools:context=".Engineering"
+    android:padding="15dp">
 
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
         <LinearLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
@@ -25,8 +20,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="261dp"
@@ -41,78 +36,99 @@
 
         </LinearLayout>
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <VideoView
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_gravity="center"/>
 
+        <ImageView
+            android:layout_below="@id/video"
+            android:id="@+id/zenith"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/zenithbuil"/>
+
         <TextView
-            android:layout_marginTop="30dp"
+            android:layout_below="@id/zenith"
+            android:id="@+id/txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="\t\tThe Circuit City stall"
             android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
+            android:textSize="18sp"/>
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt1"
+            android:id="@+id/txt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="\t\tThe Grease Lab stall"
             android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
+            android:textSize="18sp"/>
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt2"
+            android:id="@+id/txt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="\t\t\The Building Beyond Boundaries stall"
             android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
+            android:textSize="18sp"/>
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt3"
+            android:id="@+id/txt4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="\t\tThe Mathematriks stall"
             android:textColor="@color/white"
-            android:textSize="18sp">
-        </TextView>
+            android:textSize="18sp"/>
 
-<!--        <TextView-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="\t\tThe Cyber World"-->
-<!--            android:textSize="18sp">-->
-<!--        </TextView>-->
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt4"
+            android:id="@+id/txt5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="end"
             android:text="~All locacted in Zenith  Building"
             android:textColor="@color/white"
-            android:textSize="15sp">
-        </TextView>
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_below="@id/txt5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Copyrights Reserved By CINEC Campus - @2023"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textColor="@color/grey_font"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
 
-    </LinearLayout>
-    <TextView
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All Copyrights Reserved By CINEC Campus - @2023"
-        android:textAlignment="center"
-        android:textSize="10sp"
-        android:textColor="@color/grey_font"/>
+
 
 </RelativeLayout>
